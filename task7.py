@@ -2,5 +2,5 @@
 
 year= int(input('year = '))
 
-print('нет' if year%4 else 'да')
+print('нет' if year%4 or year%400 or year%4 and not year%100 else 'да')
 
