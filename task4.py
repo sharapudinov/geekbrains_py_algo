@@ -8,6 +8,6 @@ pos_a = ord(a) - ord('A') if ord('A') <= ord(a) <= ord('Z') else ord(a) - ord('a
 
 b = input('b = ')
 
-pos_b = ord(b) - ord('A') if ord('A') < ord(b) < ord('Z') else ord(b) -ord('a')
+pos_b = ord(b) - ord('A') if ord('A') < ord(b) < ord('Z') else ord(b) - ord('a')
 
-print(pos_a, pos_b, abs(ord(a) - ord(b)) - 1)
+print(pos_a, pos_b, abs(pos_a - pos_b) - 1)
